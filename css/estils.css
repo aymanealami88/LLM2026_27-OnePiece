@@ -1,0 +1,183 @@
+/* RESET BÀSIC I CONFIGURACIÓ GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffff00; /* Fons groc exterior característic del model */
+    color: #222222;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* CAPÇALERA I NAVEGACIÓ */
+.capcalera-principal {
+    background-color: #4c4c4c;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contenedor-header {
+    margin-bottom: 5px;
+}
+
+.logo-principal {
+    max-width: 280px;
+    height: auto;
+    display: inline-block;
+}
+
+.menu-navegacio {
+    background-color: #333333;
+    padding: 8px 0;
+}
+
+.menu-navegacio ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ESTILS DE TOTS ELS ENLLAÇOS DE TEXT */
+a {
+    color: #ff8c00; /* Taronja per defecte */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #222222; /* Color base del text */
+    border-bottom: 1px solid #222222; /* Vorera de línia contínua */
+}
+
+/* NAVEGACIÓ ESPECÍFICA */
+.menu-navegacio a {
+    color: #ff8c00;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-navegacio a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* CONTENIDOR PRINCIPAL (CENTRAT EN PANTALLA) */
+.contingut-principal {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Caixeta blanca central */
+    padding: 25px 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ENCAPÇALAMENTS */
+h1 {
+    font-size: 26px;
+    color: #1a4f8b;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+/* PARÀGRAFS I TEXT */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.introduccio {
+    font-size: 15px;
+}
+
+/* BARRA DE METADADES (DATA I XARXES) */
+.barra-metadades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 6px 0;
+    margin: 15px 0 20px 0;
+    font-size: 13px;
+    color: #666666;
+}
+
+.xarxes-socials img {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.xarxes-socials a:hover {
+    border-bottom: none; /* Sense línia sota les icones */
+}
+
+/* IMATGES */
+.imatge-destacada {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imatge-destacada img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* CONTENIDOR DE TWEET / X */
+.contenedor-tweet {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* LLISTES */
+.llista-curiositats {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.llista-curiositats li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+/* ENLLAÇOS FINALS */
+.bloc-enllacos-externs {
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.bloc-enllacos-externs p {
+    margin-bottom: 5px;
+}
+
+/* PEU DE PÀGINA */
+.peu-pagina {
+    background-color: #9351b6; /* Fons lila del peu Fandom */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 0;
+}
+
+.logo-fandom {
+    max-width: 250px;
+    height: auto;
+}
+
+.peu-pagina a:hover {
+    border-bottom: none;
+}
