@@ -206,3 +206,8 @@ p {
     max-width: 650px;
     display: block;
 }
+/* Color cian/blau per als títols de les sagues */
+.llista-sagues > li > strong,
+.arcstitol {
+    color: #2b7bb9; /* o cyan / #00a8e8 segons el blau exacte que vulguis */
+}
