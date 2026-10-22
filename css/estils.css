@@ -181,3 +181,28 @@ p {
 .peu-pagina a:hover {
     border-bottom: none;
 }
+/* Estils de Flexbox per a la pàgina de llistat d'arcs */
+.columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.columnas .left {
+    flex: 1;
+}
+
+.columnas .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.columnas .right .foto1 {
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+    display: block;
+}
