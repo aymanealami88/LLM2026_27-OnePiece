@@ -208,29 +208,49 @@ p {
     display: block;
 }
 
-/* TRACTAMENT ESPECÍFIC PER ALS TITOLS I PICS DE LES SAGUES */
+/* TRACTAMENT ESPECÍFIC PER ALS TÍTOLS I PICS DE LES SAGUES I ARCS */
 .llista-sagues, 
 .left ul {
-    list-style: none !important; /* Elimina els punts negres (bullets) */
-    padding-left: 0;
+    list-style: none !important;
+    list-style-type: none !important;
+    padding-left: 0 !important;
 }
 
-.llista-sagues > li {
+.llista-sagues > li,
+.left ul > li {
+    list-style: none !important;
+    list-style-type: none !important;
     margin-bottom: 15px;
 }
 
+/* Color blau cian per als títols de les sagues */
 .llista-sagues li strong,
-.arcstitol {
-    color: #2b7bb9 !important; /* Color blau cian característic */
+.left ul li strong,
+.arcstitol,
+.titolarc {
+    color: #2b7bb9 !important;
     font-size: 16px;
 }
 
+/* Icona cinema */
 .ico-cine {
     vertical-align: middle;
     margin-right: 5px;
 }
 
+/* Color blau cian per a la llista ordenada d'arcs */
 .listanum {
     padding-left: 25px;
     margin-top: 5px;
+}
+
+.listanum li,
+.left ol li {
+    color: #2b7bb9 !important;
+}
+
+.listanum li::marker,
+.left ol li::marker {
+    color: #2b7bb9 !important;
+    font-weight: bold;
 }
