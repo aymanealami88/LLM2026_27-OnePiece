@@ -67,7 +67,7 @@ a:hover {
 
 /* CONTENIDOR PRINCIPAL (CENTRAT EN PANTALLA) */
 .contingut-principal {
-    max-width: 800px;
+    max-width: 1100px; /* Ampliat per a que cabiguen les 2 columnes amb Flexbox */
     margin: 0 auto;
     background-color: #ffffff; /* Caixeta blanca central */
     padding: 25px 35px;
@@ -144,7 +144,7 @@ p {
     margin: 25px 0;
 }
 
-/* LLISTES */
+/* LLISTES GENERALS */
 .llista-curiositats {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -181,11 +181,12 @@ p {
 .peu-pagina a:hover {
     border-bottom: none;
 }
-/* Estils de Flexbox per a la pàgina de llistat d'arcs */
+
+/* ESTILS FLEXBOX PER A LA PÀGINA DE LLISTAT D'ARCS */
 .columnas {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     align-items: flex-start;
 }
 
@@ -206,8 +207,30 @@ p {
     max-width: 650px;
     display: block;
 }
-/* Color cian/blau per als títols de les sagues */
-.llista-sagues > li > strong,
+
+/* TRACTAMENT ESPECÍFIC PER ALS TITOLS I PICS DE LES SAGUES */
+.llista-sagues, 
+.left ul {
+    list-style: none !important; /* Elimina els punts negres (bullets) */
+    padding-left: 0;
+}
+
+.llista-sagues > li {
+    margin-bottom: 15px;
+}
+
+.llista-sagues li strong,
 .arcstitol {
-    color: #2b7bb9; /* o cyan / #00a8e8 segons el blau exacte que vulguis */
+    color: #2b7bb9 !important; /* Color blau cian característic */
+    font-size: 16px;
+}
+
+.ico-cine {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.listanum {
+    padding-left: 25px;
+    margin-top: 5px;
 }
